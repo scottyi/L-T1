@@ -1,5 +1,3 @@
-// Copyright 2013 Bill Campbell, Swami Iyer and Bahar Akbal-Delibas
-
 package pass;
 
 import java.lang.Integer;
@@ -11,12 +9,12 @@ public class Series {
 
     public static int GEOMETRIC = 2;
 
-    private int a; // first term
-
-    private int d; // common sum or multiple
-
-    private int n; // number of terms
-
+    private int a;
+    
+    private int d;
+    
+    private int n;
+    
     public Series() {
         this(1, 1, 10);
     }

@@ -114,6 +114,21 @@ class Scanner {
            else {
         	   moreWhiteSpace = false;
            }
+            
+           if (ch == '%') {
+               nextCh();
+               if (ch == '%') {
+            	   // CharReader maps all new lines to '\n'
+            	   while (ch != '\n' && ch != EOFCH) {
+            		   nextCh();
+            	   }
+                } else {
+                    return new TokenInfo(MOD, line);
+                }
+            } else {
+                moreWhiteSpace = false;
+            }
+
         }
         
         line = input.line();
@@ -169,7 +184,10 @@ class Scanner {
             }
         case '-':
             nextCh();
-            if (ch == '-') {
+            if (ch == '=') {
+                nextCh();
+                return new TokenInfo(MINUS_ASSIGN, line);
+            } else if (ch == '-') {
                 nextCh();
                 return new TokenInfo(DEC, line);
             } else {

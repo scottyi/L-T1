@@ -21,6 +21,9 @@ public class JMinusMinusTestRunner {
         suite.addTestSuite(SeriesTest.class);
         suite.addTestSuite(ClassesTest.class);
         suite.addTestSuite(DivisionTest.class);
+        suite.addTestSuite(MinusAssignTest.class);
+        suite.addTestSuite(ModuloTest.class);
+        suite.addTestSuite(GCDTest.class);
         return suite;
     }
 

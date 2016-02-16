@@ -1,5 +1,3 @@
-// Division.java
-
 package pass;
 
 public class Division {

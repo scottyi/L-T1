@@ -1,11 +1,7 @@
-// Copyright 2013 Bill Campbell, Swami Iyer and Bahar Akbal-Delibas
-
 package fail;
 
 import java.lang.Integer;
 import java.lang.System;
-
-// This program has syntax errors and shouldn't compile.
 
 public class SyntaxErrors {
 
