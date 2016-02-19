@@ -1179,7 +1179,8 @@ public class Parser {
      */
 
     private JExpression multiplicativeExpression() {
-        int line = scanner.token().line();
+        
+    	int line = scanner.token().line();
         boolean more = true;
         JExpression lhs = unaryExpression();
         while (more) {

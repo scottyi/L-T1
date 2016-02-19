@@ -11,7 +11,8 @@ public class Division {
 	}
 	
 	 public static void main(String[] args) {
-			Division division = new Division();
+			
+		 	Division division = new Division();
 			
 			int a = Integer.parseInt(args[0]);
 			int b = Integer.parseInt(args[1]);

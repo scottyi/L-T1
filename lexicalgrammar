@@ -35,6 +35,7 @@ WHILE       ::= "while"
 
 // Operators
 ASSIGN      ::= "="
+DIV         ::= "/"
 EQUAL       ::= "=="
 GT          ::= ">"
 INC         ::= "++"
@@ -43,11 +44,11 @@ LE          ::= "<="
 LNOT        ::= "!"
 MINUS       ::= "-"
 MINUS_ASSIGN ::= "-="
+MOD         ::= "%"
 PLUS        ::= "+"
 PLUS_ASSIGN ::= "+="
 STAR        ::= "*"
-DIV         ::= "/"
-MOD         ::= "%"
+
 
 // Separators
 COMMA       ::= ","

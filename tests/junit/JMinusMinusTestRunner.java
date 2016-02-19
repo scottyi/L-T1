@@ -15,7 +15,8 @@ import pass.*;
 public class JMinusMinusTestRunner {
 
     public static Test suite() {
-        TestSuite suite = new TestSuite();
+        
+    	TestSuite suite = new TestSuite();
         suite.addTestSuite(HelloWorldTest.class);
         suite.addTestSuite(FactorialTest.class);
         suite.addTestSuite(SeriesTest.class);

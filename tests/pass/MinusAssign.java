@@ -11,6 +11,7 @@ public class MinusAssign {
     }
     
     public static void main(String[] args) {
+    	
     	MinusAssign minusAssign = new MinusAssign();
 		
 		int a = Integer.parseInt(args[0]);

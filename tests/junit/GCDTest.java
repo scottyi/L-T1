@@ -21,6 +21,7 @@ public class GCDTest extends TestCase {
     }
 
     public void testGcd() {
+    	
     	assertEquals(this.gcd.gcd(10, 4), 2);
         assertEquals(this.gcd.gcd(4, 9), 1);
         assertEquals(this.gcd.gcd(0, 42), 42);

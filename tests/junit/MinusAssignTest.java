@@ -16,7 +16,8 @@ public class MinusAssignTest extends TestCase {
     }
 
     public void testMinusAssign() {
-        this.assertEquals(this.minusAssign.minusAssign(42, 42), 0);
+        
+    	this.assertEquals(this.minusAssign.minusAssign(42, 42), 0);
         this.assertEquals(this.minusAssign.minusAssign(42, 1), 41);
         this.assertEquals(this.minusAssign.minusAssign(127, 3), 124);
     }

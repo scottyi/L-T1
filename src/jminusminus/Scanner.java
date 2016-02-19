@@ -145,7 +145,8 @@ class Scanner {
      */
 
     public TokenInfo getNextToken() {
-        StringBuffer buffer;
+        
+    	StringBuffer buffer;
         boolean moreWhiteSpace = true;
         while (moreWhiteSpace) {
             while (isWhitespace(ch)) {

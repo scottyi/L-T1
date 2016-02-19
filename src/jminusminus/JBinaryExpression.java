@@ -323,8 +323,7 @@ class JDivideOp extends JBinaryExpression {
 /**
  * The AST node for a modulo (%) expression.
  */
-class JModuloOp extends JBinaryExpression
-{
+class JModuloOp extends JBinaryExpression {
 	/**
 	 * Construct an AST node for a modulo expression
 	 * given its line number, and the lhs and rhs operands.
@@ -334,14 +333,11 @@ class JModuloOp extends JBinaryExpression
 	 * @param lhs lhs operand.
 	 * @param rhs rhs operand.
 	 */
-	public JModuloOp(int line, JExpression lhs,
-			JExpression rhs)
-	{
+	public JModuloOp(int line, JExpression lhs, JExpression rhs) {
 		super(line, "%", lhs, rhs);
 	}
 	
-    public JExpression analyze(Context context)
-	{
+    public JExpression analyze(Context context) {
 		lhs = (JExpression) lhs.analyze(context);
 		rhs = (JExpression) rhs.analyze(context);
 		lhs.type().mustMatchExpected(line(), Type.INT);
@@ -350,8 +346,7 @@ class JModuloOp extends JBinaryExpression
 		return this;
 	}
 
-	public void codegen(CLEmitter output)
-	{
+	public void codegen(CLEmitter output) {
 		lhs.codegen(output);
 		rhs.codegen(output);
 		output.addNoArgInstruction(IREM);
