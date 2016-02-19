@@ -2,8 +2,12 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.CHECKCAST;
+import static jminusminus.CLConstants.I2C;
+import static jminusminus.CLConstants.INVOKESTATIC;
+import static jminusminus.CLConstants.INVOKEVIRTUAL;
+
 import java.util.Hashtable;
-import static jminusminus.CLConstants.*;
 
 /**
  * The AST for an cast expression, which has both a cast (a type) and the

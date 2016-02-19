@@ -2,7 +2,8 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.IF_ICMPGT;
+import static jminusminus.CLConstants.IF_ICMPLE;
 
 /**
  * The AST node for a comparison expression. This class captures common aspects

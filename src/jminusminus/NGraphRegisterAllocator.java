@@ -2,8 +2,6 @@
 
 package jminusminus;
 
-import java.util.ArrayList;
-
 /**
  * Implements register allocation using graph coloring algorithm.
  */

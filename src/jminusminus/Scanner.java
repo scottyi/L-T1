@@ -2,12 +2,65 @@
 
 package jminusminus;
 
+import static jminusminus.TokenKind.ABSTRACT;
+import static jminusminus.TokenKind.ASSIGN;
+import static jminusminus.TokenKind.BOOLEAN;
+import static jminusminus.TokenKind.CHAR;
+import static jminusminus.TokenKind.CHAR_LITERAL;
+import static jminusminus.TokenKind.CLASS;
+import static jminusminus.TokenKind.COMMA;
+import static jminusminus.TokenKind.DEC;
+import static jminusminus.TokenKind.DIV;
+import static jminusminus.TokenKind.DOT;
+import static jminusminus.TokenKind.ELSE;
+import static jminusminus.TokenKind.EOF;
+import static jminusminus.TokenKind.EQUAL;
+import static jminusminus.TokenKind.EXTENDS;
+import static jminusminus.TokenKind.FALSE;
+import static jminusminus.TokenKind.GT;
+import static jminusminus.TokenKind.IDENTIFIER;
+import static jminusminus.TokenKind.IF;
+import static jminusminus.TokenKind.IMPORT;
+import static jminusminus.TokenKind.INC;
+import static jminusminus.TokenKind.INSTANCEOF;
+import static jminusminus.TokenKind.INT;
+import static jminusminus.TokenKind.INT_LITERAL;
+import static jminusminus.TokenKind.LAND;
+import static jminusminus.TokenKind.LBRACK;
+import static jminusminus.TokenKind.LCURLY;
+import static jminusminus.TokenKind.LE;
+import static jminusminus.TokenKind.LNOT;
+import static jminusminus.TokenKind.LPAREN;
+import static jminusminus.TokenKind.MINUS;
+import static jminusminus.TokenKind.MINUS_ASSIGN;
+import static jminusminus.TokenKind.MOD;
+import static jminusminus.TokenKind.NEW;
+import static jminusminus.TokenKind.NULL;
+import static jminusminus.TokenKind.PACKAGE;
+import static jminusminus.TokenKind.PLUS;
+import static jminusminus.TokenKind.PLUS_ASSIGN;
+import static jminusminus.TokenKind.PRIVATE;
+import static jminusminus.TokenKind.PROTECTED;
+import static jminusminus.TokenKind.PUBLIC;
+import static jminusminus.TokenKind.RBRACK;
+import static jminusminus.TokenKind.RCURLY;
+import static jminusminus.TokenKind.RETURN;
+import static jminusminus.TokenKind.RPAREN;
+import static jminusminus.TokenKind.SEMI;
+import static jminusminus.TokenKind.STAR;
+import static jminusminus.TokenKind.STATIC;
+import static jminusminus.TokenKind.STRING_LITERAL;
+import static jminusminus.TokenKind.SUPER;
+import static jminusminus.TokenKind.THIS;
+import static jminusminus.TokenKind.TRUE;
+import static jminusminus.TokenKind.VOID;
+import static jminusminus.TokenKind.WHILE;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.LineNumberReader;
 import java.util.Hashtable;
-import static jminusminus.TokenKind.*;
 
 /**
  * A lexical analyzer for j--, that has no backtracking mechanism.

@@ -2,7 +2,17 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.AALOAD;
+import static jminusminus.CLConstants.AASTORE;
+import static jminusminus.CLConstants.BALOAD;
+import static jminusminus.CLConstants.BASTORE;
+import static jminusminus.CLConstants.CALOAD;
+import static jminusminus.CLConstants.CASTORE;
+import static jminusminus.CLConstants.DUP2;
+import static jminusminus.CLConstants.DUP2_X1;
+import static jminusminus.CLConstants.DUP_X2;
+import static jminusminus.CLConstants.IALOAD;
+import static jminusminus.CLConstants.IASTORE;
 
 /**
  * The AST for an array indexing operation. It has an expression

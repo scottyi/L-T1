@@ -2,7 +2,15 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.ARRAYLENGTH;
+import static jminusminus.CLConstants.DUP;
+import static jminusminus.CLConstants.DUP_X1;
+import static jminusminus.CLConstants.GETFIELD;
+import static jminusminus.CLConstants.GETSTATIC;
+import static jminusminus.CLConstants.IFEQ;
+import static jminusminus.CLConstants.IFNE;
+import static jminusminus.CLConstants.PUTFIELD;
+import static jminusminus.CLConstants.PUTSTATIC;
 
 /**
  * The AST node for a field selection operation. It has a target object, a field

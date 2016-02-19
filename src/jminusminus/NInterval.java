@@ -3,10 +3,7 @@
 package jminusminus;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.TreeMap;
-
-import static jminusminus.NPhysicalRegister.*;
 
 /**
  * A lifetime interval, recording the interval of LIR code for which the

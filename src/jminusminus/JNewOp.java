@@ -2,8 +2,11 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.DUP;
+import static jminusminus.CLConstants.INVOKESPECIAL;
+import static jminusminus.CLConstants.NEW;
+
 import java.util.ArrayList;
-import static jminusminus.CLConstants.*;
 
 /**
  * The AST node for a "new" expression. It keeps track of its type, the

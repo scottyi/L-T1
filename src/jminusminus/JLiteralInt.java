@@ -2,7 +2,14 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.BIPUSH;
+import static jminusminus.CLConstants.ICONST_0;
+import static jminusminus.CLConstants.ICONST_1;
+import static jminusminus.CLConstants.ICONST_2;
+import static jminusminus.CLConstants.ICONST_3;
+import static jminusminus.CLConstants.ICONST_4;
+import static jminusminus.CLConstants.ICONST_5;
+import static jminusminus.CLConstants.SIPUSH;
 
 /**
  * The AST node for an int literal.

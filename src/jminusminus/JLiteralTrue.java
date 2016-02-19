@@ -2,7 +2,8 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.GOTO;
+import static jminusminus.CLConstants.ICONST_1;
 
 /**
  * The AST node for the boolean "true" literal.

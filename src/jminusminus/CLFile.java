@@ -2,9 +2,27 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.ACC_ABSTRACT;
+import static jminusminus.CLConstants.ACC_ANNOTATION;
+import static jminusminus.CLConstants.ACC_BRIDGE;
+import static jminusminus.CLConstants.ACC_ENUM;
+import static jminusminus.CLConstants.ACC_FINAL;
+import static jminusminus.CLConstants.ACC_INTERFACE;
+import static jminusminus.CLConstants.ACC_NATIVE;
+import static jminusminus.CLConstants.ACC_PRIVATE;
+import static jminusminus.CLConstants.ACC_PROTECTED;
+import static jminusminus.CLConstants.ACC_PUBLIC;
+import static jminusminus.CLConstants.ACC_STATIC;
+import static jminusminus.CLConstants.ACC_STRICT;
+import static jminusminus.CLConstants.ACC_SUPER;
+import static jminusminus.CLConstants.ACC_SYNCHRONIZED;
+import static jminusminus.CLConstants.ACC_SYNTHETIC;
+import static jminusminus.CLConstants.ACC_TRANSIENT;
+import static jminusminus.CLConstants.ACC_VARARGS;
+import static jminusminus.CLConstants.ACC_VOLATILE;
+
 import java.io.IOException;
 import java.util.ArrayList;
-import static jminusminus.CLConstants.*;
 
 /**
  * Representation of the ClassFile structure (JVM Spec Section 4.2). An instance

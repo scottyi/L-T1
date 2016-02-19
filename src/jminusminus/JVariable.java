@@ -2,7 +2,29 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.ALOAD;
+import static jminusminus.CLConstants.ALOAD_0;
+import static jminusminus.CLConstants.ALOAD_1;
+import static jminusminus.CLConstants.ALOAD_2;
+import static jminusminus.CLConstants.ALOAD_3;
+import static jminusminus.CLConstants.ASTORE;
+import static jminusminus.CLConstants.ASTORE_0;
+import static jminusminus.CLConstants.ASTORE_1;
+import static jminusminus.CLConstants.ASTORE_2;
+import static jminusminus.CLConstants.ASTORE_3;
+import static jminusminus.CLConstants.DUP;
+import static jminusminus.CLConstants.IFEQ;
+import static jminusminus.CLConstants.IFNE;
+import static jminusminus.CLConstants.ILOAD;
+import static jminusminus.CLConstants.ILOAD_0;
+import static jminusminus.CLConstants.ILOAD_1;
+import static jminusminus.CLConstants.ILOAD_2;
+import static jminusminus.CLConstants.ILOAD_3;
+import static jminusminus.CLConstants.ISTORE;
+import static jminusminus.CLConstants.ISTORE_0;
+import static jminusminus.CLConstants.ISTORE_1;
+import static jminusminus.CLConstants.ISTORE_2;
+import static jminusminus.CLConstants.ISTORE_3;
 
 /**
  * The AST node for an identifier used as a primary expression.

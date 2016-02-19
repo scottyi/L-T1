@@ -2,9 +2,9 @@
 
 package jminusminus;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import static jminusminus.TokenKind.EOF;
+
+import java.io.FileNotFoundException;
 
 /**
  * Driver class for j-- compiler using hand-written front-end. This is the main

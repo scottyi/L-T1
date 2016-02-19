@@ -2,8 +2,15 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.AASTORE;
+import static jminusminus.CLConstants.ANEWARRAY;
+import static jminusminus.CLConstants.BASTORE;
+import static jminusminus.CLConstants.CASTORE;
+import static jminusminus.CLConstants.DUP;
+import static jminusminus.CLConstants.IASTORE;
+import static jminusminus.CLConstants.NEWARRAY;
+
 import java.util.ArrayList;
-import static jminusminus.CLConstants.*;
 
 /**
  * The AST node for an array initializer. Basically a list of

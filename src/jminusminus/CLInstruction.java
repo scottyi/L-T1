@@ -2,14 +2,38 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.Category.ARITHMETIC1;
+import static jminusminus.CLConstants.Category.ARITHMETIC2;
+import static jminusminus.CLConstants.Category.ARRAY1;
+import static jminusminus.CLConstants.Category.ARRAY2;
+import static jminusminus.CLConstants.Category.ARRAY3;
+import static jminusminus.CLConstants.Category.BIT;
+import static jminusminus.CLConstants.Category.COMPARISON;
+import static jminusminus.CLConstants.Category.CONVERSION;
+import static jminusminus.CLConstants.Category.FIELD;
+import static jminusminus.CLConstants.Category.FLOW_CONTROL1;
+import static jminusminus.CLConstants.Category.FLOW_CONTROL2;
+import static jminusminus.CLConstants.Category.FLOW_CONTROL3;
+import static jminusminus.CLConstants.Category.FLOW_CONTROL4;
+import static jminusminus.CLConstants.Category.LOAD_STORE1;
+import static jminusminus.CLConstants.Category.LOAD_STORE2;
+import static jminusminus.CLConstants.Category.LOAD_STORE3;
+import static jminusminus.CLConstants.Category.LOAD_STORE4;
+import static jminusminus.CLConstants.Category.METHOD1;
+import static jminusminus.CLConstants.Category.METHOD2;
+import static jminusminus.CLConstants.Category.MISC;
+import static jminusminus.CLConstants.Category.OBJECT;
+import static jminusminus.CLConstants.Category.STACK;
+
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Iterator;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
-import java.util.Map.Entry;
-import static jminusminus.CLConstants.*;
-import static jminusminus.CLConstants.Category.*;
+
+import jminusminus.CLConstants.Category;
 
 /**
  * Representation of a JVM instruction. It stores the opcode and mnenomic of an

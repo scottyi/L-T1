@@ -2,9 +2,6 @@
 
 package jminusminus;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
 /**
  * An abstraction for a (virtual or physical) register.
  */

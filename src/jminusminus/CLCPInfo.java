@@ -2,9 +2,20 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.CONSTANT_Class;
+import static jminusminus.CLConstants.CONSTANT_Double;
+import static jminusminus.CLConstants.CONSTANT_Fieldref;
+import static jminusminus.CLConstants.CONSTANT_Float;
+import static jminusminus.CLConstants.CONSTANT_Integer;
+import static jminusminus.CLConstants.CONSTANT_InterfaceMethodref;
+import static jminusminus.CLConstants.CONSTANT_Long;
+import static jminusminus.CLConstants.CONSTANT_Methodref;
+import static jminusminus.CLConstants.CONSTANT_NameAndType;
+import static jminusminus.CLConstants.CONSTANT_String;
+import static jminusminus.CLConstants.CONSTANT_Utf8;
+
 import java.io.DataOutputStream;
 import java.io.IOException;
-import static jminusminus.CLConstants.*;
 
 /**
  * Representation of cp_info structure (JVM Spec Section 4.5). Classes

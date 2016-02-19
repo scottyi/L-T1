@@ -2,7 +2,8 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.IADD;
+import static jminusminus.CLConstants.ISUB;
 
 /**
  * The AST node for an assignment statement. This is an abtract class into which
@@ -237,9 +238,6 @@ class JMinusAssignOp extends JAssignment {
         if (lhs.type().equals(Type.INT)) {
             rhs.type().mustMatchExpected(line(), Type.INT);
             type = Type.INT;
-        } else if (lhs.type().equals(Type.STRING)) {
-            rhs = (new JStringConcatenationOp(line, lhs, rhs)).analyze(context);
-            type = Type.STRING;
         } else {
             JAST.compilationUnit.reportSemanticError(line(),
                     "Invalid lhs type for -=: " + lhs.type());

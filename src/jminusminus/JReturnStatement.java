@@ -2,7 +2,9 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.ARETURN;
+import static jminusminus.CLConstants.IRETURN;
+import static jminusminus.CLConstants.RETURN;
 
 /**
  * The AST node for a return-statement. If the enclosing method

@@ -2,9 +2,24 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.DYNAMIC;
+import static jminusminus.CLConstants.ELT_ANNOTATION;
+import static jminusminus.CLConstants.ELT_ARRAY;
+import static jminusminus.CLConstants.ELT_B;
+import static jminusminus.CLConstants.ELT_C;
+import static jminusminus.CLConstants.ELT_D;
+import static jminusminus.CLConstants.ELT_F;
+import static jminusminus.CLConstants.ELT_I;
+import static jminusminus.CLConstants.ELT_J;
+import static jminusminus.CLConstants.ELT_S;
+import static jminusminus.CLConstants.ELT_Z;
+import static jminusminus.CLConstants.ELT_c;
+import static jminusminus.CLConstants.ELT_e;
+import static jminusminus.CLConstants.ELT_s;
+import static jminusminus.CLConstants.TABLESWITCH;
+
 import java.io.IOException;
 import java.util.ArrayList;
-import static jminusminus.CLConstants.*;
 
 /**
  * Representation of attribute_info structure (JVM Spec Section 4.8). Classes

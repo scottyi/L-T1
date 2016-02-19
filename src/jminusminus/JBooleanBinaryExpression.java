@@ -2,7 +2,13 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.GOTO;
+import static jminusminus.CLConstants.ICONST_0;
+import static jminusminus.CLConstants.ICONST_1;
+import static jminusminus.CLConstants.IF_ACMPEQ;
+import static jminusminus.CLConstants.IF_ACMPNE;
+import static jminusminus.CLConstants.IF_ICMPEQ;
+import static jminusminus.CLConstants.IF_ICMPNE;
 
 /**
  * Most binary expressions that return booleans can be recognized by their

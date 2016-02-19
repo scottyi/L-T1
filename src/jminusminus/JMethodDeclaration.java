@@ -2,8 +2,13 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.ACONST_NULL;
+import static jminusminus.CLConstants.ARETURN;
+import static jminusminus.CLConstants.ICONST_0;
+import static jminusminus.CLConstants.IRETURN;
+import static jminusminus.CLConstants.RETURN;
+
 import java.util.ArrayList;
-import static jminusminus.CLConstants.*;
 
 /**
  * The AST node for a method declaration.

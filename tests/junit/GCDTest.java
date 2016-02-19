@@ -10,18 +10,20 @@ public class GCDTest extends TestCase {
     private GCD gcd;
 
     protected void setUp() throws Exception {
-        super.setUp();
-        gcd = new GCD();
+        
+    	super.setUp();
+        this.gcd = new GCD();
     }
-
-    public void testCompute() {
-        assertEquals(gcd.compute(10, 4), 2);
-        assertEquals(gcd.compute(4, 9), 1);
-        assertEquals(gcd.compute(0, 42), 42);
-    }
-
+    
     protected void tearDown() throws Exception {
-        super.tearDown();
+        
+    	super.tearDown();
+    }
+
+    public void testGcd() {
+    	assertEquals(this.gcd.gcd(10, 4), 2);
+        assertEquals(this.gcd.gcd(4, 9), 1);
+        assertEquals(this.gcd.gcd(0, 42), 42);
     }
 
 }

@@ -2,8 +2,11 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.ALOAD_0;
+import static jminusminus.CLConstants.INVOKESPECIAL;
+import static jminusminus.CLConstants.RETURN;
+
 import java.util.ArrayList;
-import static jminusminus.CLConstants.*;
 
 /**
  * A class declaration has a list of modifiers, a name, a super class and a

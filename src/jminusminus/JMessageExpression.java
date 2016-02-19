@@ -2,9 +2,14 @@
 
 package jminusminus;
 
-import java.util.ArrayList;
+import static jminusminus.CLConstants.IFEQ;
+import static jminusminus.CLConstants.IFNE;
+import static jminusminus.CLConstants.INVOKEINTERFACE;
+import static jminusminus.CLConstants.INVOKESTATIC;
+import static jminusminus.CLConstants.INVOKEVIRTUAL;
+import static jminusminus.CLConstants.POP;
 
-import static jminusminus.CLConstants.*;
+import java.util.ArrayList;
 
 /**
  * The AST node for a message expression that has a target, optionally an

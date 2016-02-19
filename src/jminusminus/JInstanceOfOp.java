@@ -2,7 +2,9 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.IFEQ;
+import static jminusminus.CLConstants.IFNE;
+import static jminusminus.CLConstants.INSTANCEOF;
 
 /**
  * The AST node for an instanceof expression, having two

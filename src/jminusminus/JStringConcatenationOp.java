@@ -2,7 +2,10 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.DUP;
+import static jminusminus.CLConstants.INVOKESPECIAL;
+import static jminusminus.CLConstants.INVOKEVIRTUAL;
+import static jminusminus.CLConstants.NEW;
 
 /**
  * The AST node for a string concatenation operation. Nodes of this type are not

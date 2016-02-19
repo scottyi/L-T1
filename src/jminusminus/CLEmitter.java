@@ -2,21 +2,74 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.ACC_ABSTRACT;
+import static jminusminus.CLConstants.ACC_NATIVE;
+import static jminusminus.CLConstants.ATHROW;
+import static jminusminus.CLConstants.ATT_CODE;
+import static jminusminus.CLConstants.ATT_CONSTANT_VALUE;
+import static jminusminus.CLConstants.ATT_EXCEPTIONS;
+import static jminusminus.CLConstants.ATT_INNER_CLASSES;
+import static jminusminus.CLConstants.ATT_SYNTHETIC;
+import static jminusminus.CLConstants.DLOAD;
+import static jminusminus.CLConstants.DLOAD_0;
+import static jminusminus.CLConstants.DLOAD_1;
+import static jminusminus.CLConstants.DLOAD_2;
+import static jminusminus.CLConstants.DLOAD_3;
+import static jminusminus.CLConstants.DSTORE;
+import static jminusminus.CLConstants.DSTORE_0;
+import static jminusminus.CLConstants.DSTORE_1;
+import static jminusminus.CLConstants.DSTORE_2;
+import static jminusminus.CLConstants.DSTORE_3;
+import static jminusminus.CLConstants.EMPTY_STACK;
+import static jminusminus.CLConstants.GETFIELD;
+import static jminusminus.CLConstants.GOTO;
+import static jminusminus.CLConstants.GOTO_W;
+import static jminusminus.CLConstants.IINC;
+import static jminusminus.CLConstants.INVOKEINTERFACE;
+import static jminusminus.CLConstants.INVOKESTATIC;
+import static jminusminus.CLConstants.IRETURN;
+import static jminusminus.CLConstants.JSR;
+import static jminusminus.CLConstants.JSR_W;
+import static jminusminus.CLConstants.LDC;
+import static jminusminus.CLConstants.LDC2_W;
+import static jminusminus.CLConstants.LDC_W;
+import static jminusminus.CLConstants.LLOAD;
+import static jminusminus.CLConstants.LLOAD_0;
+import static jminusminus.CLConstants.LLOAD_1;
+import static jminusminus.CLConstants.LLOAD_2;
+import static jminusminus.CLConstants.LLOAD_3;
+import static jminusminus.CLConstants.LOOKUPSWITCH;
+import static jminusminus.CLConstants.LSTORE;
+import static jminusminus.CLConstants.LSTORE_0;
+import static jminusminus.CLConstants.LSTORE_1;
+import static jminusminus.CLConstants.LSTORE_2;
+import static jminusminus.CLConstants.LSTORE_3;
+import static jminusminus.CLConstants.MAGIC;
+import static jminusminus.CLConstants.MAJOR_VERSION;
+import static jminusminus.CLConstants.MINOR_VERSION;
+import static jminusminus.CLConstants.MULTIANEWARRAY;
+import static jminusminus.CLConstants.NEWARRAY;
+import static jminusminus.CLConstants.NOP;
+import static jminusminus.CLConstants.PUTFIELD;
+import static jminusminus.CLConstants.RET;
+import static jminusminus.CLConstants.RETURN;
+import static jminusminus.CLConstants.TABLESWITCH;
+import static jminusminus.CLConstants.UNIT_SIZE_STACK;
+import static jminusminus.CLConstants.WIDE;
+
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.DataOutputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Stack;
 import java.util.StringTokenizer;
 import java.util.TreeMap;
-import static jminusminus.CLConstants.*;
-import static jminusminus.CLConstants.Category.*;
 
 /**
  * This class provides a high level interface for creating (in-memory and file

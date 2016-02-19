@@ -2,7 +2,12 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.GOTO;
+import static jminusminus.CLConstants.IADD;
+import static jminusminus.CLConstants.ICONST_0;
+import static jminusminus.CLConstants.ICONST_1;
+import static jminusminus.CLConstants.INEG;
+import static jminusminus.CLConstants.ISUB;
 
 /**
  * The AST node for a unary expression. A unary expression has a single operand.

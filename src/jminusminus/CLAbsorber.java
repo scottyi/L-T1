@@ -2,12 +2,55 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.ATT_ANNOTATION_DEFAULT;
+import static jminusminus.CLConstants.ATT_CODE;
+import static jminusminus.CLConstants.ATT_CONSTANT_VALUE;
+import static jminusminus.CLConstants.ATT_DEPRECATED;
+import static jminusminus.CLConstants.ATT_ENCLOSING_METHOD;
+import static jminusminus.CLConstants.ATT_EXCEPTIONS;
+import static jminusminus.CLConstants.ATT_INNER_CLASSES;
+import static jminusminus.CLConstants.ATT_LINE_NUMBER_TABLE;
+import static jminusminus.CLConstants.ATT_LOCAL_VARIABLE_TABLE;
+import static jminusminus.CLConstants.ATT_LOCAL_VARIABLE_TYPE_TABLE;
+import static jminusminus.CLConstants.ATT_RUNTIME_INVISIBLE_ANNOTATIONS;
+import static jminusminus.CLConstants.ATT_RUNTIME_INVISIBLE_PARAMETER_ANNOTATIONS;
+import static jminusminus.CLConstants.ATT_RUNTIME_VISIBLE_ANNOTATIONS;
+import static jminusminus.CLConstants.ATT_RUNTIME_VISIBLE_PARAMETER_ANNOTATIONS;
+import static jminusminus.CLConstants.ATT_SIGNATURE;
+import static jminusminus.CLConstants.ATT_SOURCE_DEBUG_EXTENSION;
+import static jminusminus.CLConstants.ATT_SOURCE_FILE;
+import static jminusminus.CLConstants.ATT_SYNTHETIC;
+import static jminusminus.CLConstants.CONSTANT_Class;
+import static jminusminus.CLConstants.CONSTANT_Double;
+import static jminusminus.CLConstants.CONSTANT_Fieldref;
+import static jminusminus.CLConstants.CONSTANT_Float;
+import static jminusminus.CLConstants.CONSTANT_Integer;
+import static jminusminus.CLConstants.CONSTANT_InterfaceMethodref;
+import static jminusminus.CLConstants.CONSTANT_Long;
+import static jminusminus.CLConstants.CONSTANT_Methodref;
+import static jminusminus.CLConstants.CONSTANT_NameAndType;
+import static jminusminus.CLConstants.CONSTANT_String;
+import static jminusminus.CLConstants.CONSTANT_Utf8;
+import static jminusminus.CLConstants.ELT_ANNOTATION;
+import static jminusminus.CLConstants.ELT_ARRAY;
+import static jminusminus.CLConstants.ELT_B;
+import static jminusminus.CLConstants.ELT_C;
+import static jminusminus.CLConstants.ELT_D;
+import static jminusminus.CLConstants.ELT_F;
+import static jminusminus.CLConstants.ELT_I;
+import static jminusminus.CLConstants.ELT_J;
+import static jminusminus.CLConstants.ELT_S;
+import static jminusminus.CLConstants.ELT_Z;
+import static jminusminus.CLConstants.ELT_c;
+import static jminusminus.CLConstants.ELT_e;
+import static jminusminus.CLConstants.ELT_s;
+import static jminusminus.CLConstants.MAGIC;
+
+import java.io.DataInputStream;
 import java.io.EOFException;
 import java.io.IOException;
-import java.io.DataInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
-import static jminusminus.CLConstants.*;
 
 /**
  * CLAbsorber is for reading a Java class into an in-memory CLFile

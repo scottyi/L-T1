@@ -2,8 +2,10 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.ALOAD_0;
+import static jminusminus.CLConstants.INVOKESPECIAL;
+
 import java.util.ArrayList;
-import static jminusminus.CLConstants.*;
 
 /**
  * The AST node for a this(...) constructor.

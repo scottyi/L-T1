@@ -2,7 +2,11 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
+import static jminusminus.CLConstants.IADD;
+import static jminusminus.CLConstants.IDIV;
+import static jminusminus.CLConstants.IMUL;
+import static jminusminus.CLConstants.IREM;
+import static jminusminus.CLConstants.ISUB;
 
 /**
  * The AST node for a binary expression. A binary expression has an operator and

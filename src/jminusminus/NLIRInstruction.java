@@ -2,8 +2,23 @@
 
 package jminusminus;
 
-import static jminusminus.CLConstants.*;
-import static jminusminus.NPhysicalRegister.*;
+import static jminusminus.CLConstants.AALOAD;
+import static jminusminus.CLConstants.GETSTATIC;
+import static jminusminus.CLConstants.IADD;
+import static jminusminus.CLConstants.IALOAD;
+import static jminusminus.CLConstants.IASTORE;
+import static jminusminus.CLConstants.IF_ICMPGT;
+import static jminusminus.CLConstants.IF_ICMPLE;
+import static jminusminus.CLConstants.IF_ICMPNE;
+import static jminusminus.CLConstants.IMUL;
+import static jminusminus.CLConstants.INVOKESPECIAL;
+import static jminusminus.CLConstants.INVOKESTATIC;
+import static jminusminus.CLConstants.ISUB;
+import static jminusminus.CLConstants.MULTIANEWARRAY;
+import static jminusminus.CLConstants.PUTSTATIC;
+import static jminusminus.NPhysicalRegister.A0;
+import static jminusminus.NPhysicalRegister.V0;
+
 import java.io.PrintWriter;
 import java.util.ArrayList;
 

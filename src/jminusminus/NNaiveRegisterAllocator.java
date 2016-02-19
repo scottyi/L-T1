@@ -2,10 +2,11 @@
 
 package jminusminus;
 
+import static jminusminus.NPhysicalRegister.T0;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
-import static jminusminus.NPhysicalRegister.*;
 
 /**
  * Implemets a naive register allocation method. Each interval is considered

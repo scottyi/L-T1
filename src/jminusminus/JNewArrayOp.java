@@ -2,8 +2,10 @@
 
 package jminusminus;
 
+import static jminusminus.CLConstants.ANEWARRAY;
+import static jminusminus.CLConstants.NEWARRAY;
+
 import java.util.ArrayList;
-import static jminusminus.CLConstants.*;
 
 /**
  * The AST node for a "new" array operation. It keeps track of its base type and
